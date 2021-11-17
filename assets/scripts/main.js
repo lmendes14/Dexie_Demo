@@ -1,8 +1,8 @@
 // main.js
 
 import { Router } from './Router.js';
-import Dexie from '../../../Live_Server_Test/node_modules/dexie/dist/dexie.mjs';
-import { importDB, exportDB } from '../../../Live_Server_Test/node_modules/dexie-export-import/dist/dexie-export-import.mjs';
+import Dexie from '../../node_modules/dexie/dist/dexie.mjs';
+import { importDB, exportDB } from '../../node_modules/dexie-export-import/dist/dexie-export-import.mjs';
 
 const recipes = [
   'https://introweb.tech/assets/json/ghostCookies.json',
