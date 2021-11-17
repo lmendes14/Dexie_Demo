@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lab 7 - SPA vs. PWA</title>
+
+  <!-- Web Components -->
+  <script src="assets/components/RecipeCard.js" type="module"></script>
+  <script src="assets/components/RecipeExpand.js" type="module"></script>
+
+  <!-- Service Worker -->
+  <script src="sw.js" type="module"></script>
+
+  <!-- Router -->
+  <script src="assets/scripts/Router.js" type="module"></script>
+
+  <!-- Main Stylesheet & Scripts -->
+  <link rel="stylesheet" href="assets/styles/main.css" />
+  <script src="assets/scripts/main.js" type="module"></script>
+</head>
+
+<body>
+  <main>
+    <section class="section--recipe-cards shown">
+      <div class="recipe-cards--wrapper">
+        <!-- Recipes Added Here -->
+      </div>
+      <div class="button--wrapper">
+        <img src="assets/images/icons/arrow-down.png" alt="Arrow down" />
+        <button>Show more</button>
+      </div>
+      <div class="button--horizontal-line"></div>
+    </section>
+    <section class="section--recipe-expand">
+      <recipe-expand></recipe-expand>
+    </section>
+
+    <br>
+
+    <section id="create-wrapper" class="shown">
+      <label for="create">Create recipe (using json url)</label>
+      <input type="text" id="create" name="create">
+      <input type="submit" value="Create" class="create-button">
+    </section>
+  
+    <br>
+  
+    <section id="delete-wrapper" class="shown">
+      <label for="delete">Delete recipe (using json url)</label>
+      <input type="text" id="delete" name="delete">
+      <input type="submit" value="Delete" class="delete-button">
+    </section>
+  </main>
+</body>
+
+</html>

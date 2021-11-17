@@ -1,0 +1,24 @@
+{
+  "name": "lab7_starter_copy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sw.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lmendes14/Lab7_Starter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lmendes14/Lab7_Starter/issues"
+  },
+  "homepage": "https://github.com/lmendes14/Lab7_Starter#readme",
+  "dependencies": {
+    "dexie": "^3.0.3",
+    "dexie-export-import": "^1.0.3"
+  }
+}
